@@ -245,7 +245,7 @@ export default function Hero() {
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                history.pushState(null, "", "/contact");
+                history.pushState(null, "", `${import.meta.env.BASE_URL}contact`);
               }}
             >
               Hire Me

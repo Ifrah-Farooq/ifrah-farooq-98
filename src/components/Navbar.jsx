@@ -34,7 +34,7 @@ export default function Navbar() {
         entries.forEach((e) => {
           if (e.isIntersecting) {
             setActive(e.target.id);
-            history.replaceState(null, "", `/${e.target.id}`);
+            history.replaceState(null, "", `${import.meta.env.BASE_URL}${e.target.id}`);
           }
         }),
       { threshold: 0.4 },
@@ -46,14 +46,14 @@ export default function Navbar() {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setActive(id);
-    history.pushState(null, "", `/${id}`);
+    history.pushState(null, "", `${import.meta.env.BASE_URL}${id}`);
   };
 
   const NavLink = ({ item }) => {
     const isActive = active === item.id;
     return (
       <a
-        href={`/${item.id}`}
+        href={`${import.meta.env.BASE_URL}${item.id}`}
         title={item.label}
         onClick={(e) => { e.preventDefault(); scrollTo(item.id); }}
         style={{
@@ -108,7 +108,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a
-          href="/home"
+          href={`${import.meta.env.BASE_URL}home`}
           onClick={(e) => { e.preventDefault(); scrollTo("home"); }}
           style={{
             color: "var(--teal)",
@@ -176,7 +176,7 @@ export default function Navbar() {
         {links.map((l) => (
           <a
             key={l.id}
-            href={`/${l.id}`}
+            href={`${import.meta.env.BASE_URL}${l.id}`}
             onClick={(e) => { e.preventDefault(); scrollTo(l.id); }}
             style={{
               display: "flex",
