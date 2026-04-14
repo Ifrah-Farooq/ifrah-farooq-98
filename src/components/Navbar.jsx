@@ -146,8 +146,8 @@ export default function Navbar() {
           }}
         >
           <a
-            href="/Ifrah_Farooq_Resume.docx"
-            download="Ifrah_Farooq_Resume.docx"
+            href={`${import.meta.env.BASE_URL}Ifrah_Farooq_Resume.pdf`}
+            download="Ifrah_Farooq_Resume.pdf"
             title="Download Resume"
             style={{ color: "var(--muted)", transition: "0.2s" }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "var(--amber)")}

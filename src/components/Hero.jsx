@@ -185,12 +185,12 @@ export default function Hero() {
             {[
               {
                 icon: <FiLinkedin size={18} />,
-                href: "https://linkedin.com/in/meer-ifrah-un-nisa-8137a9212",
+                href: "https://www.linkedin.com/in/meer-ifrah/",
                 label: "LinkedIn",
               },
               {
                 icon: <FiGithub size={18} />,
-                href: "https://github.com/IffuTech",
+                href: "https://github.com/Ifrah-Farooq",
                 label: "GitHub",
               },
               {
@@ -233,8 +233,8 @@ export default function Hero() {
           {/* CTA buttons */}
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <a
-              href="/Ifrah_Farooq_Resume.docx"
-              download="Ifrah_Farooq_Resume.docx"
+              href={`${import.meta.env.BASE_URL}Ifrah_Farooq_Resume.pdf`}
+              download="Ifrah_Farooq_Resume.pdf"
               className="btn-teal"
             >
               <FiDownload size={16} /> Download CV

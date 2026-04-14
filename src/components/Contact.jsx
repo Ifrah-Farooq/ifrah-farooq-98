@@ -13,8 +13,8 @@ const contactCards = [
   {
     icon: <FiLinkedin size={20} />,
     title: 'LinkedIn',
-    value: 'meer-ifrah-un-nisa',
-    link: 'https://linkedin.com/in/meer-ifrah-un-nisa-8137a9212',
+    value: 'meer-ifrah',
+    link: 'https://www.linkedin.com/in/meer-ifrah/',
     cta: 'Connect',
   },
   {

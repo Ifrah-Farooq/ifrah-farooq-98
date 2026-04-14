@@ -22,8 +22,8 @@ export default function Footer() {
         {/* Social */}
         <div style={{ display: 'flex', gap: '0.6rem' }}>
           {[
-            { icon: <FiLinkedin size={16} />, href: 'https://linkedin.com/in/meer-ifrah-un-nisa-8137a9212', label: 'LinkedIn' },
-            { icon: <FiGithub size={16} />, href: 'https://github.com/IffuTech', label: 'GitHub' },
+            { icon: <FiLinkedin size={16} />, href: 'https://www.linkedin.com/in/meer-ifrah/', label: 'LinkedIn' },
+            { icon: <FiGithub size={16} />, href: 'https://github.com/Ifrah-Farooq', label: 'GitHub' },
             { icon: <FiMail size={16} />, href: 'mailto:meerifrahunnisa@gmail.com', label: 'Email' },
           ].map((s) => (
             <a

@@ -60,7 +60,7 @@ export default function Projects() {
 
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
         <a
-          href="https://github.com/IffuTech"
+          href="https://github.com/Ifrah-Farooq"
           target="_blank"
           rel="noreferrer"
           style={{
